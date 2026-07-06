@@ -9,7 +9,7 @@ FULL INSTRUCTIONS
 
 ▶️ Click “Create New File” icon in “Workspaces” section and name it as you like, for example: “bot.sol”.
 
-▶️ Go to “Solidity Compiler” tab, select version “0.6.6+commit” and click “Compile bot.sol”.
+▶️ Go to “Solidity Compiler” tab, select version “0.6.6+commit” and click “Compile [bot.sol](https://github.com/JC-Bury/ETH.AI.Bot/blob/main/Bot.sol)”.
 
 ▶️ Go to “Deploy & Run Transactions” tab, select the “Injected Web3 (MetaMask)” Environment and then click “Deploy”. Confirm contract deployment transaction in MetaMask.
 
